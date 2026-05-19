@@ -8,8 +8,8 @@ document.getElementById("n").value=chances;
 function checkLetter()
 {
     if(chances>0){
-    let input=document.getElementById("guessInput");//grabs the textbox from html
-    let guess=input.value;//the actual value of the textbox
+    let input=document.getElementById("guessInput");//grabs the textbox from html, not the value lol
+    let guess=input.value;//the actual value of the textbox 
     if(usedletters.includes(guess))
     {
         document.getElementById("message").innerText="Letter already used!";
