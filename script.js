@@ -1,4 +1,4 @@
-let word="umbrella";
+let word="UMBRELLA";
 let usedletters=[];
 let guessedWord=Array(word.length).fill("_");
 document.getElementById("word").innerText=guessedWord.join(" ");
@@ -9,7 +9,7 @@ function checkLetter()
 {
     if(chances>0){
     let input=document.getElementById("guessInput");//grabs the textbox from html, not the value lol
-    let guess=input.value;//the actual value of the textbox 
+    let guess=input.value.toUpperCase();//the actual value of the textbox 
     if(usedletters.includes(guess))
     {
         document.getElementById("message").innerText="Letter already used!";
