@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hangman Game</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="box">
+        <h3>WELCOME TO HANGMAN 101</h3>
+        <h4>Guesses left:</h4>
+        <input id="n" value="12" type="number" readonly>
+        <p  id="word">_ _ _ _ _</p>
+        <input type="text" id="guessInput" maxlength="1" placeholder="Guess a letter"><br/><br/><br/>
+        <button onclick="checkLetter()">Guess</button>
+        <p id="message"></p>
+        <div class="usedbox">
+            Used letters:
+            <span id="usedletters"></span>
+        </div>
+        <script src="script.js"></script>
+        </div>
+    </body>
+</html>
